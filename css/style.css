@@ -79,6 +79,10 @@ body {
     box-shadow: 0 0 5px blue;
 }
 
+.rightNav ul li a:visited {
+    color: blue;
+}
+
 /* First Section Css */
 .firstSection {
     padding-top: 130px;
