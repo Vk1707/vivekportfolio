@@ -335,14 +335,14 @@ body {
 /* Forth Section Start Here */
 
 .fourthSection {
-    padding-top: 50px;
+    padding: 25px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 100%;
     /* min-height: 50vh; */
-    height: 80vh;
+    /* height: 80vh; */
     background-color: white;
 }
 
