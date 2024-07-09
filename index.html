@@ -14,23 +14,45 @@
 </head>
 
 <body>
-    <nav>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img class="logo" src="assets/nature.jpg" alt="logo"/>
+            <span>Vivek's Portfolio</span>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#skills">My Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+      
+    <!-- <nav>
         <div class="navbar">
             <div class="leftNav">
                 <img class="logo" src="assets/nature.jpg" alt="" />
                 Vivek's Portfolio
             </div>
-            <!-- <div class="sideNavM" style="display: none;">
-                <i class="fa-solid fa-bars fa-2xl" style="color: #B197FC;"></i>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">My Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div> -->
+            <div class="nav-btn">
+                <label for="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
             <div id="rightNav" class="rightNav sideNavM">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -42,7 +64,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <section id="home" class="firstSection">
         <css-doodle class="doodle">
             :doodle { @grid: 12 / 100vmax; background: transparent; filter:
@@ -60,10 +82,12 @@
         <div class="leftSection">
             <div>Hi, My Name is</div>
             <span class="userName" style="color: blueviolet; font-size: 3rem; font-weight: 700">Vivek Kumar</span>
-            <div>and I am Passionate</div>
+            <div>And I Am Passionate Web Developer</div>
+            <div>I Enjoy Building Web Applications and</div>
+            <div>Continually Improving My Skills in</div>
             <div><span id="element">Web Developer</span></div>
             <div>
-                <button>Download CV</button>
+                <button><a href="assets/Blue Creative CV Resume.pdf" download="Vivek CV">Download CV</a></button>
                 <button>Hire Me</button>
             </div>
         </div>
@@ -79,32 +103,37 @@
         <div class="serviceSection">
             <div class="leftService">
                 <div class="main-img">
-                    <img src="assets/backend.png" alt="" />
-                    <h2>Back-End Development</h2>
-                    <div class="descriptionService fade-in-text">
-                        I Specialize in backend Development with Node.js, Express.js
-                        Next.js and Mongo DB, Creating Secure APIs for Web Applications.
-                    </div>
+                    <img src="assets/Front-end-development-services.jpg" alt="" style="border-radius: 5px;" />
+                </div>
+                <div class="descriptionBox">
+                    <h2>Front-End Development</h2>
+                    <span class="descriptionService ">
+                        Elevate your digital presence with cutting-edge frontend development that combines creativity and technology. I specialize in building visually stunning, user-friendly websites that engage and convert.
+                    </span>
                 </div>
             </div>
             <div class="centerService">
                 <div class="main-img">
                     <img src="assets/backend.png" alt="" />
-                    <h2>Front-End Development</h2>
-                    <div class="descriptionService fade-in-text">
+                </div>
+                <div class="descriptionBox">
+                    <h2>Back-End Development</h2>
+                    <span class="descriptionService ">
                         I Specialize in backend Development with Node.js, Express.js
                         Next.js and Mongo DB, Creating Secure APIs for Web Applications.
-                    </div>
+                    </span>
                 </div>
             </div>
             <div class="rightService">
                 <div class="main-img">
                     <img src="assets/backend.png" alt="" />
+                </div>
+                <div class="descriptionBox">
                     <h2>Graphic Design</h2>
-                    <div class="descriptionService fade-in-text">
+                    <span class="descriptionService ">
                         I Specialize in backend Development with Node.js, Express.js
                         Next.js and Mongo DB, Creating Secure APIs for Web Applications.
-                    </div>
+                    </span>
                 </div>
             </div>
         </div>
@@ -127,8 +156,8 @@
             <img src="assets/pic.png" alt="" />
         </div>
         <div class="rightAbout">
+            <h3 class="headAbout">About Me</h3>
             <div class="aboutDesc">
-                <h3>About Me</h3>
                 <h1>Code Architect, Problem Solver</h1>
                 <p>
                     A MERN stack and Next.js developer with a passion for creating
@@ -288,7 +317,7 @@
                         <span class="dot dot1" onclick="currentSlide(9,0)"></span>
                     </div>
                     <div class="text">
-                        <h3>Multishop</h3>
+                        <h3>Multishop Ecommerce</h3>
                         <p>This is a Responsive Ecommerce Multishop Website Made Using Core Php Language .</p>
                     </div>
                 </div>
@@ -428,11 +457,11 @@
             </div>
             <div class="contactForm">
                 <div class="contactDetail">
-                    <form action="" class="cForm">
-                        <input class="userC" type="text" name="" id="name" placeholder="Your Name...">
-                        <input class="pass" type="email" name="" id="email" placeholder="Your Email Id...">
-                        <textarea class="query" placeholder="Your Queries"></textarea>
-                        <Button class="btnForm">Send</Button>
+                    <form id="myForm" action="https://script.google.com/macros/s/AKfycbzhM3-MHm7MHz0K-BmnUZab98Znzklhhes2FuheAPM9Hx9SHYhsG8cghGEM7E2pup96lg/exec" name="contact-form" class="cForm">
+                        <input class="userC" type="text" name="your-name" id="name" placeholder="Your Name..." required>
+                        <input class="pass" type="email" name="your-email" id="email" placeholder="Your Email Id..." required>
+                        <textarea class="query" name="message" placeholder="Your Queries" required></textarea>
+                        <Button type="submit" id="sub" class="btnForm" value="submit">Send</Button>
                     </form>
                 </div>
             </div>
@@ -451,6 +480,7 @@
 
 
     <script src="js/app.js"></script>
+    <script src="GoogleSheet.js"></script>
     <script src="js/slideshow.js?var=1"></script>
     <script>
         var typed = new Typed("#element", {
