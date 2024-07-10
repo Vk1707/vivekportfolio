@@ -83,6 +83,9 @@ body {
     align-items: center;
     /* margin-right: %; */
  }
+ .nav-links i{
+    padding-right: 5px;
+ }
   
   .nav > .nav-links > a {
     display: inline-block;
